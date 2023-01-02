@@ -1,0 +1,523 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+/* layout */
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+}
+
+body {
+  background: #f1f1f1;
+  margin: 0;
+  font-family: "Poppins";
+}
+
+header {
+  background: #fff;
+}
+
+header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: #333;
+  text-decoration: none;
+}
+
+.pages {
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+:root {
+  --primColor: #dcdcdc;
+  --secoColor: #555555;
+  --cornerRad: 4px;
+}
+
+body {
+  background-color: var(--primColor);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+details {
+  margin: 40px;
+}
+
+summary {
+  writing-mode: vertical-lr;
+  text-align: center;
+  padding: 12px 10px;
+  width: 23px;
+  height: 17px;
+  background-color: var(--primColor);
+  border: 2px solid var(--secoColor);
+  border-radius: var(--cornerRad);
+  color: var(--secoColor);
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  transition: transform 200ms ease-in-out 0s;
+}
+
+summary::before,
+summary::after {
+  position: static;
+  top: 0;
+  left: 0;
+}
+
+summary::before {
+  content: "";
+}
+
+summary::after {
+  content: "III";
+  letter-spacing: -1px;
+}
+
+summary:hover {
+  transform: scale(1.1);
+}
+
+summary::marker {
+  font-size: 0;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] .menu {
+  animation-name: menuAnim;
+}
+
+details[open] summary::before {
+  content: "X";
+}
+
+details[open] summary::after {
+  content: "";
+}
+
+.menu {
+  height: 0;
+  width: fit-content;
+  border-radius: var(--cornerRad);
+  background-color: var(--primColor);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  animation: closeMenu 300ms ease-in-out forwards;
+}
+
+.menu a {
+  padding: 12px 24px;
+  margin: 0 16px;
+  color: var(--secoColor);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  text-align: center;
+  transition: filter 200ms linear 0s;
+}
+
+.menu a:nth-of-type(1) {
+  padding-top: 24px;
+}
+
+.menu a:nth-last-of-type(1) {
+  border-bottom: none;
+}
+
+.menu a:hover {
+  filter: brightness(200%);
+}
+
+details::before {
+  
+  color: var(--secoColor);
+  position: absolute;
+  margin-left: 80px;
+  padding: 10px 10px;
+  opacity: 0.4;
+}
+
+details[open]::before {
+  animation: fadeMe 300ms linear forwards;
+}
+
+@keyframes menuAnim {
+  0% {
+    height: 0;
+  }
+
+  100% {
+    height: 312px;
+  }
+}
+
+@keyframes fadeMe {
+  0% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=EB+Garamond:ital,wght@0,500;1,800&display=swap');
+
+
+body {
+  background: #ffffff;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+
+#container {
+  box-shadow: 0 15px 30px 1px grey;
+  background:  rgba(255, 255, 255, 0.90);
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 5em auto;
+  height: 350px;
+  width: 700px;
+
+
+}
+
+
+
+.product-details {
+  position: relative;
+  text-align: left;
+  overflow: hidden;
+  padding: 30px;
+  height: 100%;
+  float: left;
+  width: 40%;
+
+}
+
+#container .product-details h1 {
+  font-family: 'Bebas Neue', cursive;
+  display: inline-block;
+  position: relative;
+  font-size: 30px;
+  color: #344055;
+  margin: 0;
+
+}
+
+#container .product-details h1:before {
+  position: absolute;
+  content: '';
+  right: 0%;
+  top: 0%;
+  transform: translate(25px, -15px);
+  font-family: 'Bree Serif', serif;
+  display: inline-block;
+  background: #ffe6e6;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 5px;
+  color: white;
+  margin: 0;
+  animation: chan-sh 6s ease infinite;
+
+}
+
+
+
+
+
+
+.hint-star {
+  display: inline-block;
+  margin-left: 0.5em;
+  color: gold;
+  width: 50%;
+}
+
+
+#container .product-details>p {
+  font-family: 'EB Garamond', serif;
+  text-align: center;
+  font-size: 18px;
+  color: #7d7d7d;
+
+}
+
+.control {
+  position: absolute;
+  bottom: 20%;
+  left: 22.8%;
+
+}
+
+.btn {
+
+  transform: translateY(0px);
+  transition: 0.3s linear;
+  background: #809fff;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: #eee;
+  padding: 0;
+  margin: 0;
+
+}
+
+.btn:hover {
+  transform: translateY(-6px);
+  background: #1a66ff;
+}
+
+.btn span {
+  font-family: 'Farsan', cursive;
+  transition: transform 0.3s;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  margin: 0;
+
+}
+
+.btn .price,
+.shopping-cart {
+  background: #333;
+  border: 0;
+  margin: 0;
+}
+
+.btn .price {
+  transform: translateX(-10%);
+  padding-right: 15px;
+}
+
+.btn .shopping-cart {
+  transform: translateX(-100%);
+  position: absolute;
+  background: #333;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+.btn .buy {
+  z-index: 3;
+  font-weight: bolder;
+}
+
+.btn:hover .price {
+  transform: translateX(-110%);
+}
+
+.btn:hover .shopping-cart {
+  transform: translateX(0%);
+}
+
+
+
+.product-image {
+  transition: all 0.3s ease-out;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  float: right;
+  width: 45%;
+  display: inline-block;
+}
+
+#container img {
+  width: 100%;
+  height: 100%;
+}
+
+.info {
+  background: rgba(27, 26, 26, 0.9);
+  font-family: 'Bree Serif', serif;
+  transition: all 0.3s ease-out;
+  transform: translateX(-100%);
+  position: absolute;
+  line-height: 1.8;
+  text-align: left;
+  font-size: 105%;
+  cursor: no-drop;
+  color: #FFF;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.info h2 {
+  text-align: center
+}
+
+.product-image:hover .info {
+  transform: translateX(0);
+}
+
+.info ul li {
+  transition: 0.3s ease;
+}
+
+.info ul li:hover {
+  transform: translateX(50px) scale(1.3);
+}
+
+.product-image:hover img {
+  transition: all 0.3s ease-out;
+}
+
+.product-image:hover img {
+  transform: scale(1.2, 1.2);
+}
+
+.sidenav {
+width: 250px;
+transition: width 0.3s ease-in-out;
+height: 100vh;
+background-color: rgb(10,25,41);
+padding-top: 28px;
+}
+
+.sidenavClosed {
+composes: sidenav;
+transition: width 0.3s ease-in-out;
+width: 60px
+}
+
+.sideitem {
+display: flex;
+align-items: center;
+padding: 10px 20px;
+cursor: pointer;
+color: #B2BAC2;
+text-decoration: none;
+}
+
+.linkText {
+padding-left: 16px;
+}
+
+.linkTextClosed {
+composes: linkText;
+visibility: hidden;
+}
+
+.sideitem:hover {
+background-color: #244f7d1c;
+
+}
+
+.menuBtn {
+align-self: center;
+align-self: flex-start;
+justify-self: flex-end;
+color: #B2BAC2;
+background-color: transparent;
+border: none;
+cursor: pointer;
+padding-left: 20px;
+}
+
+.login-form {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.login-form button[type="submit"] {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-form button[type="submit"]:hover {
+  background-color: #46a049;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-content a {
+  color: #000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropdown-toggle {
+  background-color: #ddd;
+}
+
+.dropdown-toggle {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+}

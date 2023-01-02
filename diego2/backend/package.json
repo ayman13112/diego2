@@ -1,0 +1,39 @@
+{
+  "proxy": "http://localhost:4000",
+  "name": "acl-coders",
+  "version": "1.0.0",
+  "description": "no desc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Advanced-Computer-Lab-2022/ACL-coders.git"
+  },
+  "author": "ahmed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Advanced-Computer-Lab-2022/ACL-coders/issues"
+  },
+  "homepage": "https://github.com/Advanced-Computer-Lab-2022/ACL-coders#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "country-price": "^2.0.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.6.7",
+    "nodemailer": "^6.8.0",
+    "pdf-creator-node": "^2.3.5",
+    "regex": "^0.1.1",
+    "validator": "^13.7.0"
+    
+  },
+  "keywords": [
+    "project"
+  ],
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
